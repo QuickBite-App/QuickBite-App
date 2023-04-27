@@ -22,6 +22,11 @@
 		CE3EBE2329F40FA400BCD9E3 /* LaunchScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3EBE2229F40FA400BCD9E3 /* LaunchScreenView.storyboard */; };
 		CECC890B29FAD22C006430B5 /* Rectangle 576.png in Resources */ = {isa = PBXBuildFile; fileRef = CECC890A29FAD22C006430B5 /* Rectangle 576.png */; };
 		CECC890D29FAE6BC006430B5 /* fast-food-png-41602 1.svg in Resources */ = {isa = PBXBuildFile; fileRef = CECC890C29FAE6BB006430B5 /* fast-food-png-41602 1.svg */; };
+		CECC890F29FB2E5F006430B5 /* Rectangle 574.png in Resources */ = {isa = PBXBuildFile; fileRef = CECC890E29FB2E5F006430B5 /* Rectangle 574.png */; };
+		CECC891129FB35DA006430B5 /* Love Icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = CECC891029FB35DA006430B5 /* Love Icon.svg */; };
+		CECC891329FB3BA5006430B5 /* Group 2279.svg in Resources */ = {isa = PBXBuildFile; fileRef = CECC891229FB3BA5006430B5 /* Group 2279.svg */; };
+		CECC891529FB3E41006430B5 /* shopping-bag 1.svg in Resources */ = {isa = PBXBuildFile; fileRef = CECC891429FB3E41006430B5 /* shopping-bag 1.svg */; };
+		CECC891729FB3F0E006430B5 /* Icon Star.svg in Resources */ = {isa = PBXBuildFile; fileRef = CECC891629FB3F0E006430B5 /* Icon Star.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,11 @@
 		CE3EBE2229F40FA400BCD9E3 /* LaunchScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenView.storyboard; sourceTree = "<group>"; };
 		CECC890A29FAD22C006430B5 /* Rectangle 576.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 576.png"; path = "../../../../../Downloads/Rectangle 576.png"; sourceTree = "<group>"; };
 		CECC890C29FAE6BB006430B5 /* fast-food-png-41602 1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "fast-food-png-41602 1.svg"; path = "../../../../../Downloads/fast-food-png-41602 1.svg"; sourceTree = "<group>"; };
+		CECC890E29FB2E5F006430B5 /* Rectangle 574.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 574.png"; path = "../../../../../Downloads/Rectangle 574.png"; sourceTree = "<group>"; };
+		CECC891029FB35DA006430B5 /* Love Icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Love Icon.svg"; path = "../../../../../Downloads/Love Icon.svg"; sourceTree = "<group>"; };
+		CECC891229FB3BA5006430B5 /* Group 2279.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Group 2279.svg"; path = "../../../../../Downloads/Group 2279.svg"; sourceTree = "<group>"; };
+		CECC891429FB3E41006430B5 /* shopping-bag 1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "shopping-bag 1.svg"; path = "../../../../../Downloads/shopping-bag 1.svg"; sourceTree = "<group>"; };
+		CECC891629FB3F0E006430B5 /* Icon Star.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Icon Star.svg"; path = "../../../../../Downloads/Icon Star.svg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,11 @@
 				CE3EBDFF29F40C8D00BCD9E3 /* QuickBite_AppApp.swift */,
 				CE3EBE0329F40C9100BCD9E3 /* Assets.xcassets */,
 				CECC890C29FAE6BB006430B5 /* fast-food-png-41602 1.svg */,
+				CECC891229FB3BA5006430B5 /* Group 2279.svg */,
+				CECC891429FB3E41006430B5 /* shopping-bag 1.svg */,
+				CECC891029FB35DA006430B5 /* Love Icon.svg */,
+				CECC891629FB3F0E006430B5 /* Icon Star.svg */,
+				CECC890E29FB2E5F006430B5 /* Rectangle 574.png */,
 				CECC890A29FAD22C006430B5 /* Rectangle 576.png */,
 				CE3EBE0529F40C9100BCD9E3 /* Preview Content */,
 			);
@@ -167,9 +182,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3EBE0729F40C9100BCD9E3 /* Preview Assets.xcassets in Resources */,
+				CECC890F29FB2E5F006430B5 /* Rectangle 574.png in Resources */,
 				CECC890D29FAE6BC006430B5 /* fast-food-png-41602 1.svg in Resources */,
 				CE3EBE0429F40C9100BCD9E3 /* Assets.xcassets in Resources */,
+				CECC891729FB3F0E006430B5 /* Icon Star.svg in Resources */,
 				CE3EBE2329F40FA400BCD9E3 /* LaunchScreenView.storyboard in Resources */,
+				CECC891329FB3BA5006430B5 /* Group 2279.svg in Resources */,
+				CECC891529FB3E41006430B5 /* shopping-bag 1.svg in Resources */,
+				CECC891129FB35DA006430B5 /* Love Icon.svg in Resources */,
 				CECC890B29FAD22C006430B5 /* Rectangle 576.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
