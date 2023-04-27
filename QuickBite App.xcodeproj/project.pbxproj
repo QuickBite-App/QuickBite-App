@@ -20,6 +20,7 @@
 		CE3EBE1F29F40F3900BCD9E3 /* OrderConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EBE1E29F40F3900BCD9E3 /* OrderConfirmationView.swift */; };
 		CE3EBE2129F40F7100BCD9E3 /* OrderProgessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EBE2029F40F7100BCD9E3 /* OrderProgessView.swift */; };
 		CE3EBE2329F40FA400BCD9E3 /* LaunchScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3EBE2229F40FA400BCD9E3 /* LaunchScreenView.storyboard */; };
+		CECC890B29FAD22C006430B5 /* Rectangle 576.png in Resources */ = {isa = PBXBuildFile; fileRef = CECC890A29FAD22C006430B5 /* Rectangle 576.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		CE3EBE1E29F40F3900BCD9E3 /* OrderConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationView.swift; sourceTree = "<group>"; };
 		CE3EBE2029F40F7100BCD9E3 /* OrderProgessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderProgessView.swift; sourceTree = "<group>"; };
 		CE3EBE2229F40FA400BCD9E3 /* LaunchScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenView.storyboard; sourceTree = "<group>"; };
+		CECC890A29FAD22C006430B5 /* Rectangle 576.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 576.png"; path = "../../../../../Downloads/Rectangle 576.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				CE3EBE0D29F40E1900BCD9E3 /* Views */,
 				CE3EBDFF29F40C8D00BCD9E3 /* QuickBite_AppApp.swift */,
 				CE3EBE0329F40C9100BCD9E3 /* Assets.xcassets */,
+				CECC890A29FAD22C006430B5 /* Rectangle 576.png */,
 				CE3EBE0529F40C9100BCD9E3 /* Preview Content */,
 			);
 			path = "QuickBite App";
@@ -163,6 +166,7 @@
 				CE3EBE0729F40C9100BCD9E3 /* Preview Assets.xcassets in Resources */,
 				CE3EBE0429F40C9100BCD9E3 /* Assets.xcassets in Resources */,
 				CE3EBE2329F40FA400BCD9E3 /* LaunchScreenView.storyboard in Resources */,
+				CECC890B29FAD22C006430B5 /* Rectangle 576.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
