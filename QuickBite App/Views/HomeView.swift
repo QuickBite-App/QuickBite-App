@@ -25,7 +25,7 @@ struct HomeView: View {
         ScrollView {
             VStack{
                 ZStack {
-                    Color.red
+                    Color(.red)
                     HStack{
                         Image("BannerAdImage")
                             .resizable()
@@ -51,7 +51,7 @@ struct HomeView: View {
                               .aspectRatio(contentMode: .fill)
                               .edgesIgnoringSafeArea(.all)
                     )
-                    .padding()
+                    .padding(EdgeInsets(top: 10, leading: 16, bottom: 10, trailing: 16))
                 }
             }
             .cornerRadius(10)
