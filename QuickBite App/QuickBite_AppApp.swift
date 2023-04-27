@@ -11,7 +11,9 @@ import SwiftUI
 struct QuickBite_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            NavigationView {
+                HomeView()
+            }
         }
     }
 }
