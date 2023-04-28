@@ -95,6 +95,7 @@ struct MenuDetailView: View {
                                .fontWeight(.bold)
                                .font(.system(size: 20))
                     }
+                    .padding(.bottom, 50)
                 }
                 .padding()
                 .frame(width: UIScreen.main.bounds.width, height: 465)
