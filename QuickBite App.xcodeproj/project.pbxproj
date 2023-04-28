@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9651905A29FC2B060016F43B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9651905929FC2B060016F43B /* OnboardingView.swift */; };
+		9651905C29FC2B360016F43B /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9651905B29FC2B360016F43B /* LaunchView.swift */; };
 		CE39CC0629FC128A0095B356 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39CC0529FC128A0095B356 /* ContentView.swift */; };
 		CE3EBE0029F40C8D00BCD9E3 /* QuickBite_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EBDFF29F40C8D00BCD9E3 /* QuickBite_AppApp.swift */; };
 		CE3EBE0429F40C9100BCD9E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3EBE0329F40C9100BCD9E3 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9651905929FC2B060016F43B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		9651905B29FC2B360016F43B /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		CE39CC0529FC128A0095B356 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE3EBDFC29F40C8D00BCD9E3 /* QuickBite App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuickBite App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3EBDFF29F40C8D00BCD9E3 /* QuickBite_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickBite_AppApp.swift; sourceTree = "<group>"; };
@@ -56,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9651905629FC29E70016F43B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9651905929FC2B060016F43B /* OnboardingView.swift */,
+				9651905B29FC2B360016F43B /* LaunchView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		CE3EBDF329F40C8D00BCD9E3 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +107,7 @@
 		CE3EBE0D29F40E1900BCD9E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9651905629FC29E70016F43B /* Onboarding */,
 				CE3EBE0E29F40E3900BCD9E3 /* HomeView.swift */,
 				CE3EBE1229F40E7000BCD9E3 /* MenuListView.swift */,
 				CE3EBE1429F40E8B00BCD9E3 /* MenuDetailView.swift */,
@@ -183,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3EBE1B29F40ED200BCD9E3 /* CartView.swift in Sources */,
+				9651905C29FC2B360016F43B /* LaunchView.swift in Sources */,
 				CE3EBE1529F40E8B00BCD9E3 /* MenuDetailView.swift in Sources */,
 				CE3EBE1F29F40F3900BCD9E3 /* OrderConfirmationView.swift in Sources */,
 				CE489DF029FC10760074C5BA /* NavigationTab.swift in Sources */,
@@ -195,6 +210,7 @@
 				CE39CC0629FC128A0095B356 /* ContentView.swift in Sources */,
 				CE3EBE1929F40EB400BCD9E3 /* SignUpView.swift in Sources */,
 				CE3EBE0029F40C8D00BCD9E3 /* QuickBite_AppApp.swift in Sources */,
+				9651905A29FC2B060016F43B /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
