@@ -14,7 +14,7 @@ private let adaptiveColumns = [
 ]
 struct MenuListView: View {
     
-    //let FoodList: FoodItems
+  //  let FoodList: FoodItems
     @State var searchText = ""
     
     
