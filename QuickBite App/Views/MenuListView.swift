@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MenuListView: View {
+    @State var searchText = ""
     var body: some View {
         HStack{
             Button(action:{}, label: {Image(systemName: "chevron.left")  })
@@ -18,6 +19,7 @@ struct MenuListView: View {
                 Text("Search")
             }
             
+            
             .fontWeight(.bold)
             Spacer()
             Button(action:{}, label: {Image(systemName: "bell")  })
@@ -25,6 +27,17 @@ struct MenuListView: View {
         .font(.title)
         .padding()
         .accentColor(.black)
+        
+            HStack {
+                Image(systemName: "magnifyingglass")
+                TextField("what can we offer you today?", text: $searchText)
+                Image(systemName: "slider.horizontal.3")
+            }
+            .padding()
+            .background(Color.gray.opacity(0.3).cornerRadius(10))
+        .frame(width: 350)
+        
+        
         }
     }
     
