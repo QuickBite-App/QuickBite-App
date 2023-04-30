@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40B3FD1929FEF3AF0089476D /* FoodItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3FD1829FEF3AF0089476D /* FoodItems.swift */; };
 		CE39CC0629FC128A0095B356 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39CC0529FC128A0095B356 /* ContentView.swift */; };
 		CE3EBE0029F40C8D00BCD9E3 /* QuickBite_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EBDFF29F40C8D00BCD9E3 /* QuickBite_AppApp.swift */; };
 		CE3EBE0429F40C9100BCD9E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3EBE0329F40C9100BCD9E3 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40B3FD1829FEF3AF0089476D /* FoodItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItems.swift; sourceTree = "<group>"; };
 		CE39CC0529FC128A0095B356 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE3EBDFC29F40C8D00BCD9E3 /* QuickBite App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuickBite App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3EBDFF29F40C8D00BCD9E3 /* QuickBite_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickBite_AppApp.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40B3FD1729FEF35E0089476D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				40B3FD1829FEF3AF0089476D /* FoodItems.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		CE3EBDF329F40C8D00BCD9E3 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		CE3EBDFE29F40C8D00BCD9E3 /* QuickBite App */ = {
 			isa = PBXGroup;
 			children = (
+				40B3FD1729FEF35E0089476D /* Data */,
 				CE3EBE0D29F40E1900BCD9E3 /* Views */,
 				CE3EBDFF29F40C8D00BCD9E3 /* QuickBite_AppApp.swift */,
 				CE3EBE0329F40C9100BCD9E3 /* Assets.xcassets */,
@@ -194,6 +205,7 @@
 				CE3EBE1329F40E7000BCD9E3 /* MenuListView.swift in Sources */,
 				CE39CC0629FC128A0095B356 /* ContentView.swift in Sources */,
 				CE3EBE1929F40EB400BCD9E3 /* SignUpView.swift in Sources */,
+				40B3FD1929FEF3AF0089476D /* FoodItems.swift in Sources */,
 				CE3EBE0029F40C8D00BCD9E3 /* QuickBite_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
