@@ -9,12 +9,32 @@ import SwiftUI
 
 struct MenuListView: View {
     var body: some View {
-        Text("Menu List Page")
+        HStack{
+            Button(action:{}, label: {Image(systemName: "chevron.left")  })
+            
+            
+            
+            VStack(spacing: 4){
+                Text("Search")
+            }
+            
+            .fontWeight(.bold)
+            Spacer()
+            Button(action:{}, label: {Image(systemName: "bell")  })
+        }
+        .font(.title)
+        .padding()
+        .accentColor(.black)
+        }
     }
-}
+    
+    struct MenuListView_Previews: PreviewProvider {
+        static var previews: some View {
+            VStack {
+                MenuListView()
+                Spacer()
+            }
+        }
+    }
 
-struct MenuListView_Previews: PreviewProvider {
-    static var previews: some View {
-        MenuListView()
-    }
-}
+
