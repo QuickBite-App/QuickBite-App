@@ -39,8 +39,8 @@ struct MenuListView: View {
                 .frame(width: 350)
                 .accentColor(.black)
             
-            //List
             
+            //List
             NavigationView {
                 ScrollView{
                     ForEach(item.data){ items in
@@ -57,7 +57,7 @@ struct MenuListView: View {
         }
     }
 
-//Nav Bar
+//Extension to keep code clean
 extension MenuListView {
     private var backButton: some View {
         Button(action:{}, label: {Image(systemName: "chevron.left")  })
