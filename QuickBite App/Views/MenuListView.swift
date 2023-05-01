@@ -15,47 +15,45 @@ struct MenuListView: View {
     var body: some View {
         
         //Nav Bar
-        HStack{
-            backButton
-            
-            titleSection
-            
-            .fontWeight(.bold)
-            
-            Spacer()
-            
-            barButton
-            
-        }
-        .font(.title)
-        .padding()
-        .accentColor(.black)
-        
-        //Search
-        searchSection
+        VStack{
+            HStack{
+                backButton
+                
+                titleSection
+                
+                    .fontWeight(.bold)
+                
+                Spacer()
+                
+                barButton
+                
+            }
+            .font(.title)
             .padding()
-            .background(Color.gray.opacity(0.3).cornerRadius(10))
-        .frame(width: 350)
-        .accentColor(.black)
-    
-        //List
-
-        NavigationView {
-            ScrollView{
-                ForEach(item.data){ items in
-                    Card(food: items)
+            .accentColor(.black)
+            
+            //Search
+            searchSection
+                .padding()
+                .background(Color.gray.opacity(0.3).cornerRadius(10))
+                .frame(width: 350)
+                .accentColor(.black)
+            
+            //List
+            
+            NavigationView {
+                ScrollView{
+                    ForEach(item.data){ items in
+                        Card(food: items)
+                    }
                 }
             }
         }
-        }
     }
-    
+}
     struct MenuListView_Previews: PreviewProvider {
         static var previews: some View {
-            VStack {
                 MenuListView()
-                Spacer()
-            }
         }
     }
 
