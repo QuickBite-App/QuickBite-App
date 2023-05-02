@@ -12,7 +12,7 @@ struct ProfileView: View {
     @State var userName = ""
     @State var firstName = ""
     @State var lastName = ""
-    @State var dateOfBirth = ""
+    @State var dateOfBirth = Date()
     
     
     
@@ -86,15 +86,14 @@ struct ProfileView: View {
                 
                 
                 VStack{
-                    Text("Date of Birth")
+                    DatePicker("Date of Birth", selection: $dateOfBirth, displayedComponents: .date)
                         .fontWeight(.semibold)
-                    TextField("Your Birthday (dd-mm-yyyy)", text: $dateOfBirth)
                     Rectangle()
                         .fill(Color.black)
                         .opacity(1)
                         .frame(height: 1)
                 }
-                .padding(.horizontal)
+                .padding()
                 
                 
                 Spacer()
@@ -132,7 +131,6 @@ extension ProfileView {
     private var titleSection: some View {
         VStack{
             Text("Fill in your bio to get started")
-                .multilineTextAlignment(.center)
         }
     }
 }
