@@ -50,7 +50,7 @@ struct Card: View {
                 .padding([.leading, .trailing], 10)
             
                 .overlay(alignment: .bottomTrailing, content: {
-                    HStack {
+                HStack {
                         HStack {
                             Button(action:{}, label: {Image("CountDown")})
                                 .frame(width: 31.68, height: 26)

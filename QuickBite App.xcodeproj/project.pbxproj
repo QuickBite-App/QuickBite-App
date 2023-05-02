@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401276A92A01486E008187D5 /* ProfileSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401276A82A01486E008187D5 /* ProfileSuccessView.swift */; };
+		406F003B2A01163600AF3C0E /* CartItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F003A2A01163600AF3C0E /* CartItems.swift */; };
+		406F003F2A01295E00AF3C0E /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F003E2A01295E00AF3C0E /* List.swift */; };
 		40B3FD1929FEF3AF0089476D /* FoodItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3FD1829FEF3AF0089476D /* FoodItems.swift */; };
 		40B3FD1D2A00589F0089476D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3FD1C2A00589F0089476D /* Card.swift */; };
 		CE39CC0629FC128A0095B356 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39CC0529FC128A0095B356 /* ContentView.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		401276A82A01486E008187D5 /* ProfileSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSuccessView.swift; sourceTree = "<group>"; };
+		406F003A2A01163600AF3C0E /* CartItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItems.swift; sourceTree = "<group>"; };
+		406F003E2A01295E00AF3C0E /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		40B3FD1829FEF3AF0089476D /* FoodItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItems.swift; sourceTree = "<group>"; };
 		40B3FD1C2A00589F0089476D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		CE39CC0529FC128A0095B356 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				40B3FD1829FEF3AF0089476D /* FoodItems.swift */,
+				406F003A2A01163600AF3C0E /* CartItems.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -110,6 +117,7 @@
 				CE3EBE0E29F40E3900BCD9E3 /* HomeView.swift */,
 				CE3EBE1229F40E7000BCD9E3 /* MenuListView.swift */,
 				40B3FD1C2A00589F0089476D /* Card.swift */,
+				406F003E2A01295E00AF3C0E /* List.swift */,
 				CE3EBE1429F40E8B00BCD9E3 /* MenuDetailView.swift */,
 				CE3EBE1629F40E9F00BCD9E3 /* LoginView.swift */,
 				CE3EBE1829F40EB400BCD9E3 /* SignUpView.swift */,
@@ -120,6 +128,7 @@
 				CE3EBE2229F40FA400BCD9E3 /* LaunchScreenView.storyboard */,
 				CE489DEF29FC10760074C5BA /* NavigationTab.swift */,
 				CE489DF129FC11010074C5BA /* ProfileView.swift */,
+				401276A82A01486E008187D5 /* ProfileSuccessView.swift */,
 				CE39CC0529FC128A0095B356 /* ContentView.swift */,
 			);
 			path = Views;
@@ -200,12 +209,15 @@
 				CE3EBE1529F40E8B00BCD9E3 /* MenuDetailView.swift in Sources */,
 				CE3EBE1F29F40F3900BCD9E3 /* OrderConfirmationView.swift in Sources */,
 				CE489DF029FC10760074C5BA /* NavigationTab.swift in Sources */,
+				406F003F2A01295E00AF3C0E /* List.swift in Sources */,
 				CE489DF229FC11010074C5BA /* ProfileView.swift in Sources */,
 				CE3EBE2129F40F7100BCD9E3 /* OrderProgessView.swift in Sources */,
+				406F003B2A01163600AF3C0E /* CartItems.swift in Sources */,
 				CE3EBE1D29F40EE900BCD9E3 /* CheckoutView.swift in Sources */,
 				40B3FD1D2A00589F0089476D /* Card.swift in Sources */,
 				CE3EBE1729F40E9F00BCD9E3 /* LoginView.swift in Sources */,
 				CE3EBE0F29F40E3900BCD9E3 /* HomeView.swift in Sources */,
+				401276A92A01486E008187D5 /* ProfileSuccessView.swift in Sources */,
 				CE3EBE1329F40E7000BCD9E3 /* MenuListView.swift in Sources */,
 				CE39CC0629FC128A0095B356 /* ContentView.swift in Sources */,
 				CE3EBE1929F40EB400BCD9E3 /* SignUpView.swift in Sources */,
