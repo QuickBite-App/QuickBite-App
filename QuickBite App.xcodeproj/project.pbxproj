@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401276A92A01486E008187D5 /* ProfileSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401276A82A01486E008187D5 /* ProfileSuccessView.swift */; };
 		406F003B2A01163600AF3C0E /* CartItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F003A2A01163600AF3C0E /* CartItems.swift */; };
 		406F003F2A01295E00AF3C0E /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F003E2A01295E00AF3C0E /* List.swift */; };
 		40B3FD1929FEF3AF0089476D /* FoodItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3FD1829FEF3AF0089476D /* FoodItems.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		401276A82A01486E008187D5 /* ProfileSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSuccessView.swift; sourceTree = "<group>"; };
 		406F003A2A01163600AF3C0E /* CartItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItems.swift; sourceTree = "<group>"; };
 		406F003E2A01295E00AF3C0E /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		40B3FD1829FEF3AF0089476D /* FoodItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItems.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				CE3EBE2229F40FA400BCD9E3 /* LaunchScreenView.storyboard */,
 				CE489DEF29FC10760074C5BA /* NavigationTab.swift */,
 				CE489DF129FC11010074C5BA /* ProfileView.swift */,
+				401276A82A01486E008187D5 /* ProfileSuccessView.swift */,
 				CE39CC0529FC128A0095B356 /* ContentView.swift */,
 			);
 			path = Views;
@@ -214,6 +217,7 @@
 				40B3FD1D2A00589F0089476D /* Card.swift in Sources */,
 				CE3EBE1729F40E9F00BCD9E3 /* LoginView.swift in Sources */,
 				CE3EBE0F29F40E3900BCD9E3 /* HomeView.swift in Sources */,
+				401276A92A01486E008187D5 /* ProfileSuccessView.swift in Sources */,
 				CE3EBE1329F40E7000BCD9E3 /* MenuListView.swift in Sources */,
 				CE39CC0629FC128A0095B356 /* ContentView.swift in Sources */,
 				CE3EBE1929F40EB400BCD9E3 /* SignUpView.swift in Sources */,
