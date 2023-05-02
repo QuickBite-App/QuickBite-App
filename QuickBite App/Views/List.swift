@@ -35,15 +35,14 @@ struct List: View {
                             .overlay(alignment: .trailing, content: {
                             HStack {
                                     HStack {
-                                        Image("CountDown")
-                                            .resizable()
+                                        Button(action:{}, label: {Image("CountDown")  })
+                                            
                                             .frame(width: 31.68, height: 26)
                                         Text("1")
                                             .font(.body)
                                             .fontWeight(.medium)
                                             .foregroundColor(Color.red)
-                                        Image("CountUp")
-                                            .resizable()
+                                        Button(action:{}, label: {Image("CountUp")  })
                                             .frame(width: 31.68, height: 26)
                                     }
                                 }
@@ -64,3 +63,6 @@ struct List_Previews: PreviewProvider {
         List(cart: CartItems(name: "Burger", imageName: "Burger", price: "£12.5"))
     }
 }
+
+
+//Button(action:{}, label: {Image("CountUp")  })

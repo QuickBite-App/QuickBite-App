@@ -39,9 +39,21 @@ struct CartView: View {
                     }
                 }
             }
-            .navigationTitle("Selected Items")
-            .navigationBarTitleDisplayMode(.automatic)
             
+            HStack {
+                Button(action: {
+                           print("Button tapped!")
+                       }) {
+                           Text("Confirm Order")
+                       }
+                       .frame(width: 270, height: 70)
+                       .background(Color.red)
+                       .cornerRadius(24.88)
+                       .foregroundColor(.white)
+                       .fontWeight(.bold)
+                       .font(.system(size: 20))
+            }
+            .padding(.bottom, 50)
             }
             
         }
@@ -52,7 +64,7 @@ struct CartView: View {
         }
     }
     
-//Eztension to keep code clean
+//Extension to keep code clean
     extension CartView {
         private var backButton: some View {
             Button(action:{}, label: {Image(systemName: "chevron.left")  })
