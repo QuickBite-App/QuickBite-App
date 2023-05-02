@@ -19,24 +19,9 @@ struct CartItems: Identifiable{
 class ViewCart: ObservableObject {
     @Published var data: [CartItems] = [
         CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
-        CartItems(name: "Burger", imageName: "Burger", price: "£12.5"),
+        CartItems(name: "Steak", imageName: "Steak", price: "£12.5"),
+        CartItems(name: "Spaghetti", imageName: "spaghetti", price: "£12.5"),
+        CartItems(name: "Ice Cream", imageName: "IceCream", price: "£12.5"),
+        CartItems(name: "Hot Dog", imageName: "HotDog", price: "£12.5"),
     ]
 }

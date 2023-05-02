@@ -50,7 +50,7 @@ struct Card: View {
                 .padding([.leading, .trailing], 10)
             
                 .overlay(alignment: .bottomTrailing, content: {
-                    HStack {
+                HStack {
                         HStack {
                             Image("CountDown")
                                 .resizable()

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CartView: View {
+    @State  var list = ViewCart()
+    
     var body: some View {
         //Nav Bar
         VStack{
@@ -29,15 +31,24 @@ struct CartView: View {
             .padding()
             .accentColor(.black)
             
+            //Nav
+            NavigationView {
+                ScrollView{
+                    ForEach(list.data){ items in
+                        List(cart: items)
+                    }
+                }
+            }
+            .navigationTitle("Selected Items")
+            .navigationBarTitleDisplayMode(.automatic)
+            
+            }
+            
         }
-    }
 }
     struct CartView_Previews: PreviewProvider {
         static var previews: some View {
-            VStack{
                 CartView()
-                Spacer()
-            }
         }
     }
     
