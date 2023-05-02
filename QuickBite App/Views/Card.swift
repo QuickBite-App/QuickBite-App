@@ -52,15 +52,13 @@ struct Card: View {
                 .overlay(alignment: .bottomTrailing, content: {
                     HStack {
                         HStack {
-                            Image("CountDown")
-                                .resizable()
+                            Button(action:{}, label: {Image("CountDown")})
                                 .frame(width: 31.68, height: 26)
                             Text("1")
                                 .font(.body)
                                 .fontWeight(.medium)
                                 .foregroundColor(Color.red)
-                            Image("CountUp")
-                                .resizable()
+                            Button(action:{}, label: {Image("CountUp")})
                                 .frame(width: 31.68, height: 26)
                         }
                     }
@@ -77,6 +75,6 @@ struct Card: View {
 
 struct Card_Previews: PreviewProvider {
     static var previews: some View {
-        Card(food: FoodItems(name: "Burger", imageName: "Steak", description: "Delicious and tasty cheese burger one of tasty town’s finest.", price: "£12.5"))
+        Card(food: FoodItems(name: "Steak", imageName: "Steak", description: "Delicious and tasty cheese burger one of tasty town’s finest.", price: "£12.5"))
     }
 }
