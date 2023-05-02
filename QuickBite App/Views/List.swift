@@ -64,5 +64,3 @@ struct List_Previews: PreviewProvider {
     }
 }
 
-
-//Button(action:{}, label: {Image("CountUp")  })
