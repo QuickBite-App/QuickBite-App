@@ -4,7 +4,6 @@
 //
 //  Created by Jehoshabeath Appiah on 29/04/2023.
 //
-
 import SwiftUI
 
 struct PasswordResetView: View {
@@ -25,12 +24,12 @@ struct PasswordResetView: View {
                                         .foregroundColor(.black)
                                         .padding(.bottom, 100)
                 }
-                
+
                 VStack {
                     Text("Reset your password here")
                         .font(.system(size: 23))
                             .fontWeight(.bold)
-                    
+
                     Text("Select which contact details to use to reset your password")
                         .padding()
                         .frame(width: 300, height: 90, alignment: .center)
@@ -38,7 +37,7 @@ struct PasswordResetView: View {
                 Spacer()
             }
             .padding()
-            
+
             Spacer()
             ZStack(alignment: .trailing) {
                             TextField("New Password", text: $newPassword)
@@ -48,13 +47,13 @@ struct PasswordResetView: View {
                                 .stroke(Color.gray, lineWidth: 1)
                                 .frame(height: 60)
                                 .padding()
-                            
+
                             if showPassword {
                                 TextField("New Password", text: $newPassword)
                                     .font(.system(size: 20, weight: .bold))
                                     .frame(width: 370)
                             }
-                            
+
                             Button(action: {
                                 showPassword.toggle()
                             }) {
@@ -71,13 +70,13 @@ struct PasswordResetView: View {
                                 .stroke(Color.gray, lineWidth: 1)
                                 .frame(height: 60)
                                 .padding()
-                            
+
                             if showPassword {
                                 TextField("Confirm Password", text: $confirmPassword)
                                     .font(.system(size: 20, weight: .bold))
                                     .frame(width: 370)
                             }
-                            
+
                             Button(action: {
                                 showPassword.toggle()
                             }) {
@@ -87,7 +86,7 @@ struct PasswordResetView: View {
                             }
                         }
             Spacer()
-            
+
             Button(action: {
                 // Navigate to "Profile Success" view
                 self.presentationMode.wrappedValue.dismiss() // Dismiss the current view

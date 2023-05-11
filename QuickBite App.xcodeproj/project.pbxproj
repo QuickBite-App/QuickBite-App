@@ -28,6 +28,8 @@
 		CE3EBE2329F40FA400BCD9E3 /* LaunchScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3EBE2229F40FA400BCD9E3 /* LaunchScreenView.storyboard */; };
 		CE489DF029FC10760074C5BA /* NavigationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE489DEF29FC10760074C5BA /* NavigationTab.swift */; };
 		CE489DF229FC11010074C5BA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE489DF129FC11010074C5BA /* ProfileView.swift */; };
+		CE53DEE62A0D1AF30073CED4 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53DEE52A0D1AF30073CED4 /* SignInView.swift */; };
+		CE53DEE82A0D1B610073CED4 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53DEE72A0D1B610073CED4 /* PasswordResetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		CE3EBE2229F40FA400BCD9E3 /* LaunchScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenView.storyboard; sourceTree = "<group>"; };
 		CE489DEF29FC10760074C5BA /* NavigationTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTab.swift; sourceTree = "<group>"; };
 		CE489DF129FC11010074C5BA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CE53DEE52A0D1AF30073CED4 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		CE53DEE72A0D1B610073CED4 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 				CE489DF129FC11010074C5BA /* ProfileView.swift */,
 				401276A82A01486E008187D5 /* ProfileSuccessView.swift */,
 				CE39CC0529FC128A0095B356 /* ContentView.swift */,
+				CE53DEE52A0D1AF30073CED4 /* SignInView.swift */,
+				CE53DEE72A0D1B610073CED4 /* PasswordResetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +221,8 @@
 				406F003B2A01163600AF3C0E /* CartItems.swift in Sources */,
 				CE3EBE1D29F40EE900BCD9E3 /* CheckoutView.swift in Sources */,
 				40B3FD1D2A00589F0089476D /* Card.swift in Sources */,
+				CE53DEE62A0D1AF30073CED4 /* SignInView.swift in Sources */,
+				CE53DEE82A0D1B610073CED4 /* PasswordResetView.swift in Sources */,
 				CE3EBE1729F40E9F00BCD9E3 /* LoginView.swift in Sources */,
 				CE3EBE0F29F40E3900BCD9E3 /* HomeView.swift in Sources */,
 				401276A92A01486E008187D5 /* ProfileSuccessView.swift in Sources */,
