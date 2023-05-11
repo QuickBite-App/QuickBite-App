@@ -12,6 +12,7 @@
 		406F003F2A01295E00AF3C0E /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F003E2A01295E00AF3C0E /* List.swift */; };
 		40B3FD1929FEF3AF0089476D /* FoodItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3FD1829FEF3AF0089476D /* FoodItems.swift */; };
 		40B3FD1D2A00589F0089476D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3FD1C2A00589F0089476D /* Card.swift */; };
+		CE1803092A0D23A000F1958A /* Onboarding in Resources */ = {isa = PBXBuildFile; fileRef = CE1803082A0D23A000F1958A /* Onboarding */; };
 		CE39CC0629FC128A0095B356 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39CC0529FC128A0095B356 /* ContentView.swift */; };
 		CE3EBE0029F40C8D00BCD9E3 /* QuickBite_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EBDFF29F40C8D00BCD9E3 /* QuickBite_AppApp.swift */; };
 		CE3EBE0429F40C9100BCD9E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3EBE0329F40C9100BCD9E3 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		406F003E2A01295E00AF3C0E /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		40B3FD1829FEF3AF0089476D /* FoodItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItems.swift; sourceTree = "<group>"; };
 		40B3FD1C2A00589F0089476D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CE1803082A0D23A000F1958A /* Onboarding */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Onboarding; sourceTree = "<group>"; };
 		CE39CC0529FC128A0095B356 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE3EBDFC29F40C8D00BCD9E3 /* QuickBite App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuickBite App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3EBDFF29F40C8D00BCD9E3 /* QuickBite_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickBite_AppApp.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		CE3EBE0D29F40E1900BCD9E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE1803082A0D23A000F1958A /* Onboarding */,
 				CE3EBE0E29F40E3900BCD9E3 /* HomeView.swift */,
 				CE3EBE1229F40E7000BCD9E3 /* MenuListView.swift */,
 				40B3FD1C2A00589F0089476D /* Card.swift */,
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3EBE0729F40C9100BCD9E3 /* Preview Assets.xcassets in Resources */,
+				CE1803092A0D23A000F1958A /* Onboarding in Resources */,
 				CE3EBE0429F40C9100BCD9E3 /* Assets.xcassets in Resources */,
 				CE3EBE2329F40FA400BCD9E3 /* LaunchScreenView.storyboard in Resources */,
 			);
