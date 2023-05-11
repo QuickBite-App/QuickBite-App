@@ -30,6 +30,7 @@
 		CE489DF229FC11010074C5BA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE489DF129FC11010074C5BA /* ProfileView.swift */; };
 		CE53DEE62A0D1AF30073CED4 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53DEE52A0D1AF30073CED4 /* SignInView.swift */; };
 		CE53DEE82A0D1B610073CED4 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53DEE72A0D1B610073CED4 /* PasswordResetView.swift */; };
+		CE53DEEA2A0D1D1C0073CED4 /* SignOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53DEE92A0D1D1C0073CED4 /* SignOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		CE489DF129FC11010074C5BA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CE53DEE52A0D1AF30073CED4 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		CE53DEE72A0D1B610073CED4 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
+		CE53DEE92A0D1D1C0073CED4 /* SignOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				CE39CC0529FC128A0095B356 /* ContentView.swift */,
 				CE53DEE52A0D1AF30073CED4 /* SignInView.swift */,
 				CE53DEE72A0D1B610073CED4 /* PasswordResetView.swift */,
+				CE53DEE92A0D1D1C0073CED4 /* SignOption.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				CE39CC0629FC128A0095B356 /* ContentView.swift in Sources */,
 				CE3EBE1929F40EB400BCD9E3 /* SignUpView.swift in Sources */,
 				40B3FD1929FEF3AF0089476D /* FoodItems.swift in Sources */,
+				CE53DEEA2A0D1D1C0073CED4 /* SignOption.swift in Sources */,
 				CE3EBE0029F40C8D00BCD9E3 /* QuickBite_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
