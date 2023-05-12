@@ -13,8 +13,9 @@
 
 import SwiftUI
 
-struct OnboardingView: View {
-
+struct Onb3View: View {
+    let continueButtonAction: () -> Void
+    
     var body: some View {
 
     VStack {
@@ -38,32 +39,27 @@ struct OnboardingView: View {
             .multilineTextAlignment(.center)
         Image("design")
         Spacer()
-            Button {
-
-            } label: {
-
-                VStack{
-                Text("Get Started")
-                    .foregroundColor(Color.white)
-                    .fontWeight(.bold)
-                    .font(.system(size: 20))
-                    }
-                    .frame(width: 289, height: 72)
-                    .background(Color(red: 0.9450980392156862, green: 0.0, blue: 0.15294117647058825))
-                    .cornerRadius(23.88)
-            }
-
+        Button(action: continueButtonAction) {
+            Text("Continue")
+            .foregroundColor(Color.white)
+            .fontWeight(.bold)
+            .font(.system(size: 20))
+            .frame(width: 289, height: 72)
+            .background(Color(red: 0.9450980392156862, green: 0.0, blue: 0.15294117647058825))
+            .cornerRadius(23.88)
+        }
+        Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Image("onboardingbg"))
     }
 }
 
-struct OnboardingView3_Previews: PreviewProvider {
+struct Onb3View_Previews: PreviewProvider {
 
     static var previews: some View {
 
-        OnboardingView()
+        Onb3View(continueButtonAction: {})
 
     }
 

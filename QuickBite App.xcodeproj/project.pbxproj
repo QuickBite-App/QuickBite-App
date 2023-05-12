@@ -36,6 +36,8 @@
 		CEF067D22A0DD3050022E88E /* OnboardingViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF067D12A0DD3050022E88E /* OnboardingViewTwo.swift */; };
 		CEF067D42A0DD3270022E88E /* OnboardingViewThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF067D32A0DD3270022E88E /* OnboardingViewThree.swift */; };
 		CEF067D62A0DD37A0022E88E /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF067D52A0DD37A0022E88E /* LaunchView.swift */; };
+		CEF067D82A0E63280022E88E /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF067D72A0E63280022E88E /* OnBoardingView.swift */; };
+		CEF067DA2A0E6DD10022E88E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF067D92A0E6DD10022E88E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,9 @@
 		CEF067D12A0DD3050022E88E /* OnboardingViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewTwo.swift; sourceTree = "<group>"; };
 		CEF067D32A0DD3270022E88E /* OnboardingViewThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewThree.swift; sourceTree = "<group>"; };
 		CEF067D52A0DD37A0022E88E /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		CEF067D72A0E63280022E88E /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		CEF067D92A0E6DD10022E88E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEF067DB2A0E6FEF0022E88E /* QuickBite-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "QuickBite-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,7 @@
 				CEF067D12A0DD3050022E88E /* OnboardingViewTwo.swift */,
 				CEF067D32A0DD3270022E88E /* OnboardingViewThree.swift */,
 				CEF067D52A0DD37A0022E88E /* LaunchView.swift */,
+				CEF067D72A0E63280022E88E /* OnBoardingView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -121,11 +127,13 @@
 		CE3EBDFE29F40C8D00BCD9E3 /* QuickBite App */ = {
 			isa = PBXGroup;
 			children = (
+				CEF067DB2A0E6FEF0022E88E /* QuickBite-App-Info.plist */,
 				40B3FD1729FEF35E0089476D /* Data */,
 				CE3EBE0D29F40E1900BCD9E3 /* Views */,
 				CE3EBDFF29F40C8D00BCD9E3 /* QuickBite_AppApp.swift */,
 				CE3EBE0329F40C9100BCD9E3 /* Assets.xcassets */,
 				CE3EBE0529F40C9100BCD9E3 /* Preview Content */,
+				CEF067D92A0E6DD10022E88E /* LaunchScreen.storyboard */,
 			);
 			path = "QuickBite App";
 			sourceTree = "<group>";
@@ -225,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3EBE0729F40C9100BCD9E3 /* Preview Assets.xcassets in Resources */,
+				CEF067DA2A0E6DD10022E88E /* LaunchScreen.storyboard in Resources */,
 				CE3EBE0429F40C9100BCD9E3 /* Assets.xcassets in Resources */,
 				CE3EBE2329F40FA400BCD9E3 /* LaunchScreenView.storyboard in Resources */,
 			);
@@ -240,6 +249,7 @@
 				CE3EBE1B29F40ED200BCD9E3 /* CartView.swift in Sources */,
 				CE3EBE1529F40E8B00BCD9E3 /* MenuDetailView.swift in Sources */,
 				CE3EBE1F29F40F3900BCD9E3 /* OrderConfirmationView.swift in Sources */,
+				CEF067D82A0E63280022E88E /* OnBoardingView.swift in Sources */,
 				CEF067D62A0DD37A0022E88E /* LaunchView.swift in Sources */,
 				CE489DF029FC10760074C5BA /* NavigationTab.swift in Sources */,
 				406F003F2A01295E00AF3C0E /* List.swift in Sources */,
@@ -393,9 +403,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"QuickBite App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "QuickBite-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -421,9 +431,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"QuickBite App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "QuickBite-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

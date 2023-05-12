@@ -7,6 +7,8 @@
 import SwiftUI
 
 struct Onb2View: View {
+    let continueButtonAction: () -> Void
+    
     var body: some View {
         VStack {
             Image("quickbitelogored")
@@ -29,20 +31,15 @@ struct Onb2View: View {
              
             Image("design")
             Spacer()
-            Button {
-
-            } label: {
-                VStack{
+            Button(action: continueButtonAction) {
                 Text("Continue")
-                    .foregroundColor(Color.white)
-                    .fontWeight(.bold)
-                    .font(.system(size: 20))
-                    }
-                    .frame(width: 289, height: 72)
-                    .background(Color(red: 0.9450980392156862, green: 0.0, blue: 0.15294117647058825))
-                    .cornerRadius(23.88)
+                .foregroundColor(Color.white)
+                .fontWeight(.bold)
+                .font(.system(size: 20))
+                .frame(width: 289, height: 72)
+                .background(Color(red: 0.9450980392156862, green: 0.0, blue: 0.15294117647058825))
+                .cornerRadius(23.88)
             }
-
             Button {
 
             } label: {
@@ -58,6 +55,6 @@ struct Onb2View: View {
 
     struct Onb2View_Previews: PreviewProvider {
         static var previews: some View {
-            Onb2View()
+            Onb2View(continueButtonAction: {})
         }
     }
