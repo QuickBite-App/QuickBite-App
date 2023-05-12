@@ -8,6 +8,7 @@ import SwiftUI
 
 struct Onb1View: View {
     let continueButtonAction: () -> Void
+    let skipButtonAction: () -> Void
     
     var body: some View {
         VStack {
@@ -35,9 +36,7 @@ struct Onb1View: View {
                 .background(Color(red: 0.9450980392156862, green: 0.0, blue: 0.15294117647058825))
                 .cornerRadius(23.88)
             }
-            Button {
-
-            } label: {
+            Button(action: skipButtonAction) {
                 Text("Skip")
                     .foregroundColor(Color(red: 151/255, green: 151/255, blue: 151/255))
             }
@@ -51,6 +50,6 @@ struct Onb1View: View {
 
     struct Onb1View_Previews: PreviewProvider {
         static var previews: some View {
-            Onb1View(continueButtonAction: {})
+            Onb1View(continueButtonAction: {}, skipButtonAction: {})
         }
     }

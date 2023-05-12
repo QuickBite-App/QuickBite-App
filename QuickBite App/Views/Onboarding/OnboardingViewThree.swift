@@ -40,7 +40,7 @@ struct Onb3View: View {
         Image("design")
         Spacer()
         Button(action: continueButtonAction) {
-            Text("Continue")
+            Text("Get Started")
             .foregroundColor(Color.white)
             .fontWeight(.bold)
             .font(.system(size: 20))

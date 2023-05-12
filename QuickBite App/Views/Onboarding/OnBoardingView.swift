@@ -13,8 +13,8 @@ struct OnBoardingView: View {
     var body: some View {
         ZStack {
             switch onBoardingState {
-            case 0: Onb1View(continueButtonAction: handleNextButtonClick)
-            case 1: Onb2View(continueButtonAction: handleNextButtonClick)
+            case 0: Onb1View(continueButtonAction: handleNextButtonClick, skipButtonAction: handleSkipButtonClick)
+            case 1: Onb2View(continueButtonAction: handleNextButtonClick, skipButtonAction: handleSkipButtonClick)
             case 2: Onb3View(continueButtonAction: handleNextButtonClick)
             case 3: HomeView()
             default:
@@ -34,6 +34,12 @@ extension OnBoardingView {
     func handleNextButtonClick() {
         withAnimation(.spring()) {
             onBoardingState += 1
+        }
+    }
+    
+    func handleSkipButtonClick() {
+        withAnimation(.spring()) {
+            onBoardingState = 3
         }
     }
 }
