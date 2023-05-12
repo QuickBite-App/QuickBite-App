@@ -18,9 +18,10 @@ struct SignInView: View {
             Text("Sign in")
                 .fontWeight(.bold)
                 .font(.largeTitle)
-                .foregroundColor(.red)
+                .foregroundColor(Color("Reddish"))
                 .padding(.top, 50)
                 .padding(.leading, 20)
+                .padding(.bottom, 20)
 
             TextField("Email", text: $email, onEditingChanged: { (isEditing) in
                 if !isEditing {
@@ -41,7 +42,7 @@ struct SignInView: View {
                 }
                 .padding()
             )
-            .padding()
+            .padding(.horizontal)
 
             SecureField("Password", text: $password)
             .padding()
@@ -57,7 +58,7 @@ struct SignInView: View {
                 alignment: .trailing
             )
             .background(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
-            .padding()
+            .padding(.horizontal)
 
             HStack {
                 CheckboxFieldView(checked: $rememberMe, size: 18, color: .red)
@@ -83,8 +84,8 @@ struct SignInView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .padding(.vertical, 10)
-                    .frame(maxWidth: .infinity)
-                    .background(Color.red)
+                    .frame(maxWidth: .infinity, maxHeight: 53)
+                    .background(Color("Reddish"))
                     .cornerRadius(10)
                     .padding(.horizontal)
             }

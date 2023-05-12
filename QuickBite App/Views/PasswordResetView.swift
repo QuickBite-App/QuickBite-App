@@ -16,29 +16,19 @@ struct PasswordResetView: View {
     var body: some View {
         VStack {
             HStack {
-                Button(action: {
-                                    self.presentationMode.wrappedValue.dismiss()
-                                }) {
-                                    Image(systemName: "chevron.backward")
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.black)
-                                        .padding(.bottom, 100)
-                }
-
-                VStack {
-                    Text("Reset your password here")
+                VStack(alignment: .leading) {
+                    Text("Reset your password")
                         .font(.system(size: 23))
                             .fontWeight(.bold)
-
+                            .multilineTextAlignment(.leading)
                     Text("Select which contact details to use to reset your password")
-                        .padding()
-                        .frame(width: 300, height: 90, alignment: .center)
+                        .multilineTextAlignment(.leading)
+                        .padding(.top, 5)
                 }
                 Spacer()
             }
             .padding()
 
-            Spacer()
             ZStack(alignment: .trailing) {
                             TextField("New Password", text: $newPassword)
                                 .font(.system(size: 17, weight: .bold))
@@ -93,13 +83,12 @@ struct PasswordResetView: View {
                 self.showProfileSuccessView.toggle() // Show "Profile Success" view
             }) {
                 Text("Next")
-                    .frame(width: 289, height: 72)
-                    .background(Color.red)
-                    .cornerRadius(23.88)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color.white)
                     .fontWeight(.bold)
                     .font(.system(size: 20))
-                    .padding(.bottom, 50)
+                    .frame(width: 289, height: 72)
+                    .background(Color(red: 0.9450980392156862, green: 0.0, blue: 0.15294117647058825))
+                    .cornerRadius(23.88)
             }
             .sheet(isPresented: $showProfileSuccessView) {
                 ProfileSuccessView()

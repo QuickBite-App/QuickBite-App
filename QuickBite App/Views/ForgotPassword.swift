@@ -12,23 +12,18 @@ struct ForgotPasswordView: View {
     var body: some View {
         VStack {
             HStack {
-                Button(action: {
-                    presentationMode.wrappedValue.dismiss()
-                }) {
-                    Image(systemName: "chevron.backward")
-                        .foregroundColor(.black)
-                        .font(.title)
+                VStack(alignment: .leading) {
+                    Text("Forgot password?")
+                        .font(.system(size: 23))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.leading)
+                    Text("Select which contact details to use to reset your password")
+                        .multilineTextAlignment(.leading)
+                        .padding(.top, 5)
                 }
-                Text("Forgot password?")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .padding(.leading)
                 Spacer()
             }
             .padding()
-
-            Text("Select which contact details to use to reset your password")
-                .padding()
 
             Button(action: {
                 // Reset password via SMS
@@ -72,19 +67,18 @@ struct ForgotPasswordView: View {
                             .stroke(Color.gray, lineWidth: 1)
                         )
             }
-            .padding()
+            .padding(.horizontal)
 
             Spacer()
 
             NavigationLink(destination: PasswordResetView()) {
                 Text("Next")
-                .frame(width: 289, height: 72)
-                                    .background(Color.red)
-                                    .cornerRadius(23.88)
-                                    .foregroundColor(.white)
-                                    .fontWeight(.bold)
-                                    .font(.system(size: 20))
-                                    .padding(.bottom, 50)
+                    .foregroundColor(Color.white)
+                    .fontWeight(.bold)
+                    .font(.system(size: 20))
+                    .frame(width: 289, height: 72)
+                    .background(Color(red: 0.9450980392156862, green: 0.0, blue: 0.15294117647058825))
+                    .cornerRadius(23.88)
             }
             .navigationBarHidden(true)
         }

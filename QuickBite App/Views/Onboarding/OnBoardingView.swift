@@ -16,7 +16,7 @@ struct OnBoardingView: View {
             case 0: Onb1View(continueButtonAction: handleNextButtonClick, skipButtonAction: handleSkipButtonClick)
             case 1: Onb2View(continueButtonAction: handleNextButtonClick, skipButtonAction: handleSkipButtonClick)
             case 2: Onb3View(continueButtonAction: handleNextButtonClick)
-            case 3: HomeView()
+            case 3: SignOption()
             default:
                 HomeView()
             }

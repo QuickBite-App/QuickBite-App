@@ -15,9 +15,11 @@ struct ProfileSuccessView: View {
                     .fill(Color.green)
                     .frame(width: 170, height: 170)
                 Image("Path")
+                    .resizable()
                     .accentColor(.white)
                     .frame(width: 60, height: 70)
             }
+            .padding()
 
             VStack {
                 Text("Congratulations")
@@ -29,24 +31,26 @@ struct ProfileSuccessView: View {
             
             VStack {
                 Text("You have successfully activated your profile!")
-                    .fontWeight(.semibold)
+                    .fontWeight(.medium)
                     .multilineTextAlignment(.center)
                 
             }
             .padding(.bottom, 70)
             
             HStack {
-                Button(action: {
-                           print("Button tapped!")
-                       }) {
-                           Text("Order Now")
-                       }
-                       .frame(width: 270, height: 70)
-                       .background(Color.red)
-                       .cornerRadius(24.88)
-                       .foregroundColor(.white)
-                       .fontWeight(.bold)
-                       .font(.system(size: 20))
+                NavigationLink(destination: HomeView()) {
+                    Button(action: {
+                               print("Button tapped!")
+                           }) {
+                               Text("Go to Home")
+                           }
+                           .foregroundColor(Color.white)
+                           .fontWeight(.bold)
+                           .font(.system(size: 20))
+                           .frame(width: 289, height: 72)
+                           .background(Color(red: 0.9450980392156862, green: 0.0, blue: 0.15294117647058825))
+                           .cornerRadius(23.88)
+                }
             }
             .padding()
             

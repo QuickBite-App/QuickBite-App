@@ -13,13 +13,11 @@ struct SignOption: View {
 
     var body: some View {
         VStack {
-            Image("Group2274")
+            Image("quickbitelogored")
                 .resizable()
                 .frame(width: 60, height: 60)
                 .padding()
-
             Spacer()
-
             Image("Restaurant")
                 .resizable()
                 .scaledToFit()
