@@ -13,40 +13,31 @@ struct MenuListView: View {
     @State var searchText = ""
     
     var body: some View {
-        
-        //Nav Bar
-        VStack{
-            HStack{
-                backButton
-                
-                titleSection
-                
-                    .fontWeight(.bold)
-                
-                Spacer()
-                
-                barButton
-                
-            }
-            .font(.title)
-            .padding()
-            .accentColor(.black)
-            
-            //Search
-            searchSection
+        NavigationView {
+            VStack(spacing: 0) {
+                HStack{
+                    backButton
+                    titleSection
+                        .fontWeight(.bold)
+                    Spacer()
+                    barButton
+                }
+                .font(.title)
                 .padding()
-                .background(Color.gray.opacity(0.3).cornerRadius(10))
-                .frame(width: 350)
                 .accentColor(.black)
-            
-            
-            //List
-            NavigationView {
+                searchSection
+                    .padding()
+                    .background(Color(red: 0.9411764705882353, green: 0.9411764705882353, blue: 0.9411764705882353))
+                    .frame(width: 350)
+                    .accentColor(.black)
+                    .cornerRadius(13)
+                
                 ScrollView{
                     ForEach(item.data){ items in
                         Card(food: items)
                     }
                 }
+                .padding(.top, 20)
             }
         }
     }

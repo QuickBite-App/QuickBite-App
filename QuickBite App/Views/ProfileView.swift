@@ -32,27 +32,14 @@ struct ProfileView: View {
                     .clipped()
                     .cornerRadius(60)
                     .padding(.top, 80)
-                    
-                HStack {
-                    backButton
-                        .accentColor(.white)
-                        .padding()
-                    
-                    
-                    titleSection
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
-                
-                }
-                .font(.title3)
-                .padding(.trailing, 40)
-                .padding(.bottom, 200)
             }
             .padding(.bottom)
             VStack{
-                VStack{
+                VStack(alignment: .leading){
                     Text("Username")
-                        .fontWeight(.semibold)
+                        .fontWeight(.medium)
+                        .frame(width: .infinity)
+                        .multilineTextAlignment(.leading)
                     TextField("Your Username", text: $userName)
                     Rectangle()
                         .fill(Color.black)
@@ -61,9 +48,11 @@ struct ProfileView: View {
                 }
                 .padding(.horizontal)
                 
-                VStack{
-                    Text("Firstname")
-                        .fontWeight(.semibold)
+                VStack(alignment: .leading){
+                    Text("First Name")
+                        .fontWeight(.medium)
+                        .frame(width: .infinity)
+                        .multilineTextAlignment(.leading)
                     TextField("Your First Name", text: $firstName)
                     Rectangle()
                         .fill(Color.black)
@@ -72,10 +61,13 @@ struct ProfileView: View {
                         
                 }
                 .padding(.horizontal)
+                .padding(.top, 10)
                 
-                VStack{
-                    Text("Last name")
-                        .fontWeight(.semibold)
+                VStack(alignment: .leading){
+                    Text("Last Name")
+                        .fontWeight(.medium)
+                        .frame(width: .infinity)
+                        .multilineTextAlignment(.leading)
                     TextField("Your Last name", text: $lastName)
                     Rectangle()
                         .fill(Color.black)
@@ -83,11 +75,11 @@ struct ProfileView: View {
                         .frame(height: 1)
                 }
                 .padding(.horizontal)
-                
+                .padding(.top, 10)
                 
                 VStack{
                     DatePicker("Date of Birth", selection: $dateOfBirth, displayedComponents: .date)
-                        .fontWeight(.semibold)
+                        .fontWeight(.medium)
                     Rectangle()
                         .fill(Color.black)
                         .opacity(1)
@@ -103,12 +95,12 @@ struct ProfileView: View {
                            }) {
                                Text("Complete")
                            }
-                           .frame(width: 270, height: 70)
-                           .background(Color.red)
-                           .cornerRadius(24.88)
-                           .foregroundColor(.white)
+                           .foregroundColor(Color.white)
                            .fontWeight(.bold)
                            .font(.system(size: 20))
+                           .frame(width: 289, height: 72)
+                           .background(Color(red: 0.9450980392156862, green: 0.0, blue: 0.15294117647058825))
+                           .cornerRadius(23.88)
                 }
             }
                 .padding(.vertical)
@@ -130,7 +122,7 @@ extension ProfileView {
     
     private var titleSection: some View {
         VStack{
-            Text("Fill in your bio to get started")
+            Text("Profile")
         }
     }
 }

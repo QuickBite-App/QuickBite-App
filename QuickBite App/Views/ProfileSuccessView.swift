@@ -36,6 +36,7 @@ struct ProfileSuccessView: View {
                 
             }
             .padding(.bottom, 70)
+
             
             HStack {
                 NavigationLink(destination: HomeView()) {

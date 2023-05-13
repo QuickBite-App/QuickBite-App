@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct MenuDetailView: View {
+    @State var image: String = ""
+    @State var title: String = ""
+    @State var description: String = ""
+    @State var price: String = ""
+    
     var body: some View {
         ZStack {
             VStack(alignment: .trailing) {
                 VStack {
-                    Image("FoodExample")
+                    Image(image)
                         .resizable()
                         .frame(width: .infinity, height: 500)
                         .edgesIgnoringSafeArea(.all)
@@ -25,7 +30,7 @@ struct MenuDetailView: View {
                 Spacer()
                 VStack {
                     HStack {
-                        Text("Chicken Burger")
+                        Text(title)
                             .font(.title)
                             .fontWeight(.bold)
                         Spacer()
@@ -55,7 +60,7 @@ struct MenuDetailView: View {
                     }
                     
                     HStack {
-                        Text("Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!")
+                        Text(description)
                             .font(.body)
                             .fontWeight(.light)
                             .padding(.top, 5)
@@ -75,7 +80,7 @@ struct MenuDetailView: View {
                                 .frame(width: 31.68, height: 26)
                         }
                         Spacer()
-                        Text("$12")
+                        Text(price)
                             .font(.body)
                             .fontWeight(.medium)
                             .foregroundColor(Color.red)
@@ -88,12 +93,12 @@ struct MenuDetailView: View {
                                }) {
                                    Text("Add to cart")
                                }
-                               .frame(width: 289, height: 72)
-                               .background(Color.red)
-                               .cornerRadius(23.88)
-                               .foregroundColor(.white)
+                               .foregroundColor(Color.white)
                                .fontWeight(.bold)
                                .font(.system(size: 20))
+                               .frame(width: 289, height: 72)
+                               .background(Color(red: 0.9450980392156862, green: 0.0, blue: 0.15294117647058825))
+                               .cornerRadius(23.88)
                     }
                     .padding(.bottom, 50)
                 }
@@ -109,6 +114,6 @@ struct MenuDetailView: View {
 
 struct MenuDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuDetailView()
+        MenuDetailView(image: "FoodExample", title: "Chicken Burger", description: "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!", price: "£13.2")
     }
 }

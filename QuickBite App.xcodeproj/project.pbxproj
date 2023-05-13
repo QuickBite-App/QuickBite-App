@@ -22,9 +22,6 @@
 		CE3EBE1929F40EB400BCD9E3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EBE1829F40EB400BCD9E3 /* SignUpView.swift */; };
 		CE3EBE1B29F40ED200BCD9E3 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EBE1A29F40ED200BCD9E3 /* CartView.swift */; };
 		CE3EBE1D29F40EE900BCD9E3 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EBE1C29F40EE900BCD9E3 /* CheckoutView.swift */; };
-		CE3EBE1F29F40F3900BCD9E3 /* OrderConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EBE1E29F40F3900BCD9E3 /* OrderConfirmationView.swift */; };
-		CE3EBE2129F40F7100BCD9E3 /* OrderProgessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3EBE2029F40F7100BCD9E3 /* OrderProgessView.swift */; };
-		CE3EBE2329F40FA400BCD9E3 /* LaunchScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3EBE2229F40FA400BCD9E3 /* LaunchScreenView.storyboard */; };
 		CE489DF029FC10760074C5BA /* NavigationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE489DEF29FC10760074C5BA /* NavigationTab.swift */; };
 		CE489DF229FC11010074C5BA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE489DF129FC11010074C5BA /* ProfileView.swift */; };
 		CE53DEE62A0D1AF30073CED4 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53DEE52A0D1AF30073CED4 /* SignInView.swift */; };
@@ -54,9 +51,6 @@
 		CE3EBE1829F40EB400BCD9E3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CE3EBE1A29F40ED200BCD9E3 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		CE3EBE1C29F40EE900BCD9E3 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
-		CE3EBE1E29F40F3900BCD9E3 /* OrderConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationView.swift; sourceTree = "<group>"; };
-		CE3EBE2029F40F7100BCD9E3 /* OrderProgessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderProgessView.swift; sourceTree = "<group>"; };
-		CE3EBE2229F40FA400BCD9E3 /* LaunchScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenView.storyboard; sourceTree = "<group>"; };
 		CE489DEF29FC10760074C5BA /* NavigationTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTab.swift; sourceTree = "<group>"; };
 		CE489DF129FC11010074C5BA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CE53DEE52A0D1AF30073CED4 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -150,9 +144,6 @@
 				CE3EBE1829F40EB400BCD9E3 /* SignUpView.swift */,
 				CE3EBE1A29F40ED200BCD9E3 /* CartView.swift */,
 				CE3EBE1C29F40EE900BCD9E3 /* CheckoutView.swift */,
-				CE3EBE1E29F40F3900BCD9E3 /* OrderConfirmationView.swift */,
-				CE3EBE2029F40F7100BCD9E3 /* OrderProgessView.swift */,
-				CE3EBE2229F40FA400BCD9E3 /* LaunchScreenView.storyboard */,
 				CE489DEF29FC10760074C5BA /* NavigationTab.swift */,
 				CE489DF129FC11010074C5BA /* ProfileView.swift */,
 				401276A82A01486E008187D5 /* ProfileSuccessView.swift */,
@@ -225,7 +216,6 @@
 			files = (
 				CE3EBE0729F40C9100BCD9E3 /* Preview Assets.xcassets in Resources */,
 				CE3EBE0429F40C9100BCD9E3 /* Assets.xcassets in Resources */,
-				CE3EBE2329F40FA400BCD9E3 /* LaunchScreenView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,14 +228,12 @@
 			files = (
 				CE3EBE1B29F40ED200BCD9E3 /* CartView.swift in Sources */,
 				CE3EBE1529F40E8B00BCD9E3 /* MenuDetailView.swift in Sources */,
-				CE3EBE1F29F40F3900BCD9E3 /* OrderConfirmationView.swift in Sources */,
 				CEF067D82A0E63280022E88E /* OnBoardingView.swift in Sources */,
 				CE489DF029FC10760074C5BA /* NavigationTab.swift in Sources */,
 				406F003F2A01295E00AF3C0E /* List.swift in Sources */,
 				CEF067D02A0DD23D0022E88E /* OnboardingViewOne.swift in Sources */,
 				CEF067D42A0DD3270022E88E /* OnboardingViewThree.swift in Sources */,
 				CE489DF229FC11010074C5BA /* ProfileView.swift in Sources */,
-				CE3EBE2129F40F7100BCD9E3 /* OrderProgessView.swift in Sources */,
 				406F003B2A01163600AF3C0E /* CartItems.swift in Sources */,
 				CE3EBE1D29F40EE900BCD9E3 /* CheckoutView.swift in Sources */,
 				40B3FD1D2A00589F0089476D /* Card.swift in Sources */,
