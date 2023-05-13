@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("uid") var userID: String = ""
+    
     var body: some View {
-        OnBoardingView()
+        if userID == "" {
+            OnBoardingView()
+        } else {
+            NavigationTab()
+            
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .accentColor(.red)
     }
 }

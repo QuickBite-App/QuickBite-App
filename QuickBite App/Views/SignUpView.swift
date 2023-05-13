@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct SignUpView: View {
-    @State private var email = ""
-    @State private var isEmailValid = false
-    @State private var password = ""
-    @State private var showPassword = false
+    @State private var userID: String = ""
+    @State private var email: String = ""
+    @State private var isEmailValid: Bool = false
+    @State private var password: String = ""
+    @State private var showPassword: Bool = false
+    @State private var shouldNavigate = false
+    @State private var showAlert: Bool = false
+    @State private var alertMessage: String = ""
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -31,36 +36,70 @@ struct SignUpView: View {
                         .autocapitalization(.none)
                         .keyboardType(.emailAddress)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 10).stroke(isEmailValid ? Color.green : Color.red, lineWidth: 1))
+                        .background(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
                         .overlay(
                             HStack {
                                 Spacer()
                                 if isEmailValid {
                                     Image(systemName: "checkmark")
-                                        .foregroundColor(.black)
+                                        .foregroundColor(.green)
                                 }
                             }
                             .padding()
                         ).padding(.horizontal)
             
-            SecureField("Password", text: $password)
-               // .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-                .frame(height: 55)
-                .overlay(
-                    Button(action: {
-                        showPassword.toggle()
-                    }) {
-                        Image(systemName: showPassword ? "eye.fill" : "eye.slash.fill")
-                            .foregroundColor(.gray)
-                            .padding(.trailing, 10)
-                    },
-                    alignment: .trailing
-                )
-                .background(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
-                .padding(.horizontal)
+            ZStack(alignment: .trailing) {
+                if showPassword {
+                    TextField("Password", text: $password)
+                        .padding()
+                        .frame(height: 55)
+                        .background(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
+                } else {
+                    SecureField("Password", text: $password)
+                        .padding()
+                        .frame(height: 55)
+                        .background(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
+                }
+
+                Button(action: {
+                    showPassword.toggle()
+                }) {
+                    Image(systemName: showPassword ? "eye.fill" : "eye.slash.fill")
+                        .foregroundColor(.gray)
+                        .padding(.trailing, 10)
+                }
+            }
+            .padding(.horizontal)
             
-            Button(action: {}) {
+            Button(action: {
+                Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                    if let error = error {
+                        let nsError = error as NSError
+                        if nsError.domain == AuthErrorDomain {
+                            if nsError.code == AuthErrorCode.emailAlreadyInUse.rawValue {
+                                alertMessage = "The email address is already in use by another account."
+                                showAlert = true
+                            }
+                            else if nsError.code == AuthErrorCode.invalidEmail.rawValue {
+                                alertMessage = "The email address is invalid."
+                                showAlert = true
+                            }
+                            else {
+                                alertMessage = "Error: \(error.localizedDescription)"
+                                showAlert = true
+                            }
+                        }
+                        return
+                    }
+                    
+                    if let authResult = authResult {
+                        self.userID = authResult.user.uid
+                        if self.userID != "" {
+                            self.shouldNavigate = true
+                        }
+                    }
+                }
+            }) {
                 Text("Sign up")
                     .fontWeight(.bold)
                     .foregroundColor(.white)
@@ -70,6 +109,14 @@ struct SignUpView: View {
                     .cornerRadius(10)
                     .padding(.horizontal)
             }
+            .background(
+                NavigationLink(
+                    destination: SignInView(),
+                    isActive: $shouldNavigate,
+                    label: { EmptyView() }
+                )
+                .accentColor(.red) 
+            )
             
             HStack {
                 Text("Already have an account?")
@@ -85,6 +132,9 @@ struct SignUpView: View {
             .padding(.horizontal, 60)
             
             Spacer()
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
         }
     }
     

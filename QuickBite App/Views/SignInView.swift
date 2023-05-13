@@ -5,13 +5,17 @@
 //  Created by Jehoshabeath Appiah on 09/05/2023.
 //
 import SwiftUI
+import FirebaseAuth
 
 struct SignInView: View {
+    @AppStorage("uid") var userID: String = ""
     @State private var email = ""
     @State private var isEmailValid = false
     @State private var password = ""
     @State private var showPassword = false
     @State private var rememberMe = false
+    @State private var showAlert: Bool = false
+    @State private var alertMessage: String = ""
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -31,7 +35,7 @@ struct SignInView: View {
             .autocapitalization(.none)
             .keyboardType(.emailAddress)
             .padding()
-            .background(RoundedRectangle(cornerRadius: 10).stroke(isEmailValid ? Color.green : Color.red, lineWidth: 1))
+            .background(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
             .overlay(
                 HStack {
                     Spacer()
@@ -44,20 +48,27 @@ struct SignInView: View {
             )
             .padding(.horizontal)
 
-            SecureField("Password", text: $password)
-            .padding()
-            .frame(height: 55)
-            .overlay(
+            ZStack(alignment: .trailing) {
+                if showPassword {
+                    TextField("Password", text: $password)
+                        .padding()
+                        .frame(height: 55)
+                        .background(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
+                } else {
+                    SecureField("Password", text: $password)
+                        .padding()
+                        .frame(height: 55)
+                        .background(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
+                }
+
                 Button(action: {
                     showPassword.toggle()
                 }) {
                     Image(systemName: showPassword ? "eye.fill" : "eye.slash.fill")
                         .foregroundColor(.gray)
                         .padding(.trailing, 10)
-                },
-                alignment: .trailing
-            )
-            .background(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
+                }
+            }
             .padding(.horizontal)
 
             HStack {
@@ -76,10 +87,43 @@ struct SignInView: View {
                     }
                 )
                 .padding(.trailing, 15)
+                .accentColor(.red) 
             }
             .padding(.horizontal)
 
-            Button(action: {}) {
+            Button(action: {
+                Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                    
+                    if let error = error {
+                        let nsError = error as NSError
+                        if nsError.domain == AuthErrorDomain {
+                            if nsError.code == AuthErrorCode.invalidEmail.rawValue {
+                                alertMessage = "The email address is invalid."
+                                showAlert = true
+                            }
+                            else if nsError.code == AuthErrorCode.wrongPassword.rawValue {
+                                alertMessage = "Incorrect password, try again."
+                                showAlert = true
+                            }
+                            else if nsError.code == AuthErrorCode.invalidCredential.rawValue {
+                                alertMessage = "Invalid credentials, try again."
+                                showAlert = true
+                            }
+                            else {
+                                alertMessage = "Error: \(error.localizedDescription)"
+                                showAlert = true
+                            }
+                        }
+                        return
+                    }
+                  
+                    if let authResult = authResult {
+                        withAnimation {
+                            userID = authResult.user.uid
+                        }
+                    }
+                }
+            }) {
                 Text("Sign in")
                     .fontWeight(.bold)
                     .foregroundColor(.white)
@@ -104,6 +148,9 @@ struct SignInView: View {
             .padding(.horizontal, 60)
 
             Spacer()
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
         }
     }
 

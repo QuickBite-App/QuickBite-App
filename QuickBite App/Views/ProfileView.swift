@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct ProfileView: View {
     
@@ -13,9 +14,7 @@ struct ProfileView: View {
     @State var firstName = ""
     @State var lastName = ""
     @State var dateOfBirth = Date()
-    
-    
-    
+    @AppStorage("uid") var userID: String = ""
     
     var body: some View {
         VStack{
@@ -33,6 +32,23 @@ struct ProfileView: View {
                     .cornerRadius(60)
                     .padding(.top, 80)
             }
+            .overlay(
+                Image(systemName:"rectangle.portrait.and.arrow.forward")
+                    .padding()
+                    .background(Color.white)
+                    .clipShape(Circle())
+                    .padding(.horizontal)
+                    .onTapGesture {
+                        let firebaseAuth = Auth.auth()
+                        do {
+                          try firebaseAuth.signOut()
+                            userID = ""
+                        } catch let signOutError as NSError {
+                          print("Error signing out: %@", signOutError)
+                        }
+                    },
+                alignment: .topTrailing
+            )
             .padding(.bottom)
             VStack{
                 VStack(alignment: .leading){
