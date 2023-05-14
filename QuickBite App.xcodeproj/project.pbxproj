@@ -154,6 +154,7 @@
 		CE3EBDFE29F40C8D00BCD9E3 /* QuickBite App */ = {
 			isa = PBXGroup;
 			children = (
+				CE74B2822A0FC4C1002777DA /* Model */,
 				CEF067E02A0F7F160022E88E /* GoogleService-Info.plist */,
 				CEF067DB2A0E6FEF0022E88E /* QuickBite-App-Info.plist */,
 				40B3FD1729FEF35E0089476D /* Data */,
@@ -195,6 +196,13 @@
 				CE53DEEF2A0D1F6C0073CED4 /* ForgotPassword.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CE74B2822A0FC4C1002777DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
