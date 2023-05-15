@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @AppStorage("uid") var userID: String = ""
+    
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor.white
+    }
     
     var body: some View {
         if userID == "" {

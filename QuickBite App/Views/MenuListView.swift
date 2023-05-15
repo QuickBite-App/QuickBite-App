@@ -8,43 +8,36 @@
 import SwiftUI
 
 struct MenuListView: View {
-    @State  var item = ViewFood()
-    
+    @StateObject var data = FoodByCategoryViewModel()
+    @State var category = ""   
     @State var searchText = ""
     
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                HStack{
-                    backButton
-                    titleSection
-                        .fontWeight(.bold)
-                    Spacer()
-                    barButton
-                }
-                .font(.title)
-                .padding()
-                .accentColor(.black)
                 searchSection
                     .padding()
                     .background(Color(red: 0.9411764705882353, green: 0.9411764705882353, blue: 0.9411764705882353))
                     .frame(width: 350)
                     .accentColor(.black)
                     .cornerRadius(13)
-                
-                ScrollView{
-                    ForEach(item.data){ items in
-                        Card(food: items)
+                ScrollView {
+                    ForEach(data.filteredMeals , id: \.idMeal) { meal in
+                        Card(id: meal.idMeal)
                     }
                 }
+                .navigationBarBackButtonHidden(true)
                 .padding(.top, 20)
             }
         }
+        .onAppear {
+             data.selectedCategory = category
+         }
     }
 }
     struct MenuListView_Previews: PreviewProvider {
         static var previews: some View {
-                MenuListView()
+            MenuListView(category: "Beef")
         }
     }
 

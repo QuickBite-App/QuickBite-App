@@ -9,6 +9,7 @@ import SwiftUI
 
 struct List: View {
     var cart: CartItems
+    
     var body: some View {
         VStack (alignment: .leading, spacing: 5){
             HStack{
