@@ -197,9 +197,9 @@ struct CheckoutView: View {
                                 .fontWeight(.bold)
                         }
                         
-                        NavigationLink(destination: OrderSuccessView(), isActive: $isOrderPlaced) {
-                                    EmptyView()
-                                }
+//                        NavigationLink(destination: OrderSuccessView(), isActive: $isOrderPlaced) {
+//                                    EmptyView()
+//                                }
                                 
                                 Button(action: {
                                     isOrderPlaced = true
