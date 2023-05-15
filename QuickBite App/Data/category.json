@@ -1,0 +1,13 @@
+{
+  "meals": [
+      {
+          "strCategory": "Beef"
+      },
+      {
+          "strCategory": "Chicken"
+      },
+      {
+          "strCategory": "Lamb"
+      }
+  ]
+}

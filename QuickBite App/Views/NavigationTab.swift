@@ -8,27 +8,31 @@
 import SwiftUI
 
 struct NavigationTab: View {
+    
     var body: some View {
         TabView {
             HomeView()
-                .tabItem{
+                .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }
-            MenuDetailView()
+
+            MenuListView()
                 .tabItem {
                     Label("Favourite", systemImage: "heart")
                 }
+
             CartView()
                 .tabItem {
                     Label("Cart", systemImage: "cart.fill")
                 }
+
             ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle")
                 }
         }
-        .background(Color.blue.edgesIgnoringSafeArea(.all))
         .accentColor(Color.red)
+        
     }
 }
 
